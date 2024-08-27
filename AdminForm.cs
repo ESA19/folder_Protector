@@ -32,10 +32,7 @@ namespace folder_Protector
                         MessageBox.Show("This folder is already added!");
                     }
                 }
-                else
-                {
-                    MessageBox.Show("An error occurred while selecting the folder!");
-                }
+
             }
         }
 
@@ -106,7 +103,7 @@ namespace folder_Protector
                         if (filePath.EndsWith(".encrypted")) continue;
 
                         string originalExtension = Path.GetExtension(filePath);
-                        string encryptedFilePath = filePath + ".encrypted";
+                        string encryptedFilePath = filePath + ".enc";
 
                         try
                         {
@@ -257,9 +254,16 @@ namespace folder_Protector
 
         private void btnAdminSettings_Click(object sender, EventArgs e)
         {
-                AdminSettings adminSettings = new AdminSettings();
-                adminSettings.ShowDialog();
-            
+            AdminSettings adminSettings = new AdminSettings();
+            adminSettings.ShowDialog();
+
         }
+
+        private void btnPermissions_Click(object sender, EventArgs e)
+        {
+            PermissionSettings permissions = new PermissionSettings();
+            permissions.ShowDialog();   
+        }
+
     }
 }

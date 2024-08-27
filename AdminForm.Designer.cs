@@ -36,6 +36,7 @@
             btnManageUsers = new Button();
             btnDecrypt = new Button();
             btnAdminSettings = new Button();
+            btnPermissions = new Button();
             SuspendLayout();
             // 
             // btnSelectFolder
@@ -57,7 +58,7 @@
             lstFolders.FormattingEnabled = true;
             lstFolders.Location = new Point(12, 65);
             lstFolders.Name = "lstFolders";
-            lstFolders.Size = new Size(282, 284);
+            lstFolders.Size = new Size(282, 324);
             lstFolders.TabIndex = 1;
             // 
             // label1
@@ -125,12 +126,26 @@
             btnAdminSettings.UseVisualStyleBackColor = true;
             btnAdminSettings.Click += btnAdminSettings_Click;
             // 
+            // btnPermissions
+            // 
+            btnPermissions.AutoSize = true;
+            btnPermissions.Image = (Image)resources.GetObject("btnPermissions.Image");
+            btnPermissions.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPermissions.Location = new Point(300, 357);
+            btnPermissions.Name = "btnPermissions";
+            btnPermissions.Size = new Size(144, 38);
+            btnPermissions.TabIndex = 7;
+            btnPermissions.Text = "Permissions";
+            btnPermissions.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnPermissions.UseVisualStyleBackColor = true;
+            btnPermissions.Click += btnPermissions_Click;
+            // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(450, 378);
+            ClientSize = new Size(449, 405);
             Controls.Add(btnAdminSettings);
             Controls.Add(btnDecrypt);
             Controls.Add(btnManageUsers);
@@ -138,6 +153,7 @@
             Controls.Add(label1);
             Controls.Add(lstFolders);
             Controls.Add(btnSelectFolder);
+            Controls.Add(btnPermissions);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AdminForm";
             Text = "Admin Panel";
@@ -154,5 +170,6 @@
         private Button btnManageUsers;
         private Button btnDecrypt;
         private Button btnAdminSettings;
+        private Button btnPermissions;
     }
 }

@@ -1,14 +1,15 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.DirectoryServices;
+using System.DirectoryServices.AccountManagement;
+using System.IO;
 using System.Security.AccessControl;
+using System.Security.Principal;
+using System.Windows.Forms;
+
+
+
 
 namespace folder_Protector
 {
@@ -20,6 +21,7 @@ namespace folder_Protector
         {
             InitializeComponent();
             LoadCurrentSettings();
+
         }
 
         private void LoadCurrentSettings()
@@ -70,5 +72,7 @@ namespace folder_Protector
 
 
         }
+
+       
     }
 }

@@ -1,13 +1,4 @@
 ﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace folder_Protector
 {
@@ -25,17 +16,19 @@ namespace folder_Protector
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserSettings));
             label1 = new Label();
             label2 = new Label();
             txtNewUserName = new TextBox();
             txtNewPassword = new TextBox();
             btn_SaveChanges = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 44);
+            label1.Location = new Point(17, 52);
             label1.Name = "label1";
             label1.Size = new Size(112, 20);
             label1.TabIndex = 0;
@@ -44,7 +37,7 @@ namespace folder_Protector
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 84);
+            label2.Location = new Point(17, 92);
             label2.Name = "label2";
             label2.Size = new Size(107, 20);
             label2.TabIndex = 1;
@@ -52,14 +45,14 @@ namespace folder_Protector
             // 
             // txtNewUserName
             // 
-            txtNewUserName.Location = new Point(130, 44);
+            txtNewUserName.Location = new Point(135, 52);
             txtNewUserName.Name = "txtNewUserName";
             txtNewUserName.Size = new Size(125, 27);
             txtNewUserName.TabIndex = 2;
             // 
             // txtNewPassword
             // 
-            txtNewPassword.Location = new Point(130, 84);
+            txtNewPassword.Location = new Point(135, 92);
             txtNewPassword.Name = "txtNewPassword";
             txtNewPassword.PasswordChar = '*';
             txtNewPassword.Size = new Size(125, 27);
@@ -67,7 +60,7 @@ namespace folder_Protector
             // 
             // btn_SaveChanges
             // 
-            btn_SaveChanges.Location = new Point(89, 144);
+            btn_SaveChanges.Location = new Point(135, 137);
             btn_SaveChanges.Name = "btn_SaveChanges";
             btn_SaveChanges.Size = new Size(111, 31);
             btn_SaveChanges.TabIndex = 4;
@@ -75,15 +68,28 @@ namespace folder_Protector
             btn_SaveChanges.UseVisualStyleBackColor = true;
             btn_SaveChanges.Click += btn_SaveChanges_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label3.Location = new Point(0, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(143, 28);
+            label3.TabIndex = 5;
+            label3.Text = "User Processes:";
+            // 
             // UserSettings
             // 
-            ClientSize = new Size(272, 199);
+            ClientSize = new Size(272, 184);
+            Controls.Add(label3);
             Controls.Add(btn_SaveChanges);
             Controls.Add(txtNewPassword);
             Controls.Add(txtNewUserName);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "UserSettings";
+            Text = "User Settings";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -99,6 +105,7 @@ namespace folder_Protector
                     {
                         txtNewUserName.Text = EncryptionHelper.Decrypt(encryptedUsername);
                     }
+
                 }
             }
         }
@@ -118,7 +125,7 @@ namespace folder_Protector
                 SaveNewCredentials(newUsername, newPassword);
                 MessageBox.Show("Changes saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
-                
+
             }
 
         }
@@ -136,6 +143,8 @@ namespace folder_Protector
 
 
         }
+
+
 
 
     }

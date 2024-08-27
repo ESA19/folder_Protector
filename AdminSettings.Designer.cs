@@ -28,17 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminSettings));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             txtNewUserName = new TextBox();
             txtNewPassword = new TextBox();
             btn_SaveChanges = new Button();
-            label4 = new Label();
-            label7 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
             SuspendLayout();
             // 
             // label1
@@ -86,6 +82,7 @@
             // 
             // btn_SaveChanges
             // 
+            btn_SaveChanges.BackColor = SystemColors.ButtonHighlight;
             btn_SaveChanges.ForeColor = SystemColors.ActiveCaptionText;
             btn_SaveChanges.Location = new Point(154, 143);
             btn_SaveChanges.Name = "btn_SaveChanges";
@@ -95,72 +92,20 @@
             btn_SaveChanges.UseVisualStyleBackColor = false;
             btn_SaveChanges.Click += btn_SaveChanges_Click;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label4.Location = new Point(3, 189);
-            label4.Name = "label4";
-            label4.Size = new Size(197, 28);
-            label4.TabIndex = 6;
-            label4.Text = "Permission Processes:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(37, 302);
-            label7.Name = "label7";
-            label7.Size = new Size(0, 20);
-            label7.TabIndex = 9;
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(12, 236);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(65, 24);
-            checkBox1.TabIndex = 10;
-            checkBox1.Text = "Read";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(12, 275);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(67, 24);
-            checkBox2.TabIndex = 11;
-            checkBox2.Text = "Write";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(12, 315);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(107, 24);
-            checkBox3.TabIndex = 12;
-            checkBox3.Text = "Full Control";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
             // AdminSettings
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(290, 359);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
-            Controls.Add(label7);
-            Controls.Add(label4);
+            ClientSize = new Size(287, 188);
             Controls.Add(btn_SaveChanges);
             Controls.Add(txtNewPassword);
             Controls.Add(txtNewUserName);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AdminSettings";
-            Text = "AdminSettings";
+            Text = "Admin Settings";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -173,10 +118,5 @@
         private TextBox txtNewUserName;
         private TextBox txtNewPassword;
         private Button btn_SaveChanges;
-        private Label label4;
-        private Label label7;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
     }
 }

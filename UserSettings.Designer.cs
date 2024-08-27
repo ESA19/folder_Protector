@@ -25,5 +25,6 @@
         private TextBox txtNewUserName;
         private TextBox txtNewPassword;
         private Button btn_SaveChanges;
+        private Label label3;
     }
 }

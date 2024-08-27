@@ -4,10 +4,10 @@ using System.Windows.Forms;
 
 namespace folder_Protector
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
         
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
