@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\esaay\\Desktop\\Asya Trafo\\folder_Protector\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{98FC0FD1-A52F-4153-B8AF-66CC959E145A}|folder_Protector\\folder_Protector.csproj|c:\\users\\esaay\\desktop\\asya trafo\\folder_protector\\folder_protector\\folder_protector.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{98FC0FD1-A52F-4153-B8AF-66CC959E145A}|folder_Protector\\folder_Protector.csproj|solutionrelative:folder_protector\\folder_protector.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "folder_Protector",
+              "DocumentMoniker": "C:\\Users\\esaay\\Desktop\\Asya Trafo\\folder_Protector\\folder_Protector\\folder_Protector.csproj",
+              "RelativeDocumentMoniker": "folder_Protector\\folder_Protector.csproj",
+              "ToolTip": "C:\\Users\\esaay\\Desktop\\Asya Trafo\\folder_Protector\\folder_Protector\\folder_Protector.csproj",
+              "RelativeToolTip": "folder_Protector\\folder_Protector.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-27T19:29:23.982Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
